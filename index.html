@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gerador de QR Code</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Gerador de QR Code</h1>
+  <div id="qr-code"></div>
+  <input type="text" id="url-input" placeholder="Insira o link aqui">
+  <input type="text" id="filename-input" placeholder="Nome do arquivo">
+  <button id="generate-btn">Gerar QR Code</button><br>
+  <a id="download-link" href="#" style="display: none;" class="download-btn" download>Download</a>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2"></script>
+  <script src="script.js"></script>
+</body>
+</html>
