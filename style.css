@@ -34,7 +34,7 @@ body {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    animation: fade-in 2s;
+    animation: fade-in 1.5s;
   }
   
   button:hover {
@@ -61,12 +61,51 @@ body {
   }
   
   #download-success {
+    color:#737272;
     display: none;
     opacity: 0;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 14px;
     text-align: center;
     animation: fade-in 1s forwards, fade-out 1s 3s forwards;
+  }
+
+  footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    opacity: 50%;
+
+  }
+  
+  footer p {
+    font-size: 8px;
+    color: #737272;
+    animation: fade-in 2s;
+  }
+  
+  .contact-bar {
+    position: fixed;
+    font-size: 12px;
+    top: 0;
+    width: 100%;
+    background-color: #737272;
+    color: rgb(143, 185, 149);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    animation: fade-in 0.5s;
+    
+  }
+  
+  .contact-bar a {
+    color: rgb(143, 185, 149);
+    margin-left: 2px;
+    text-decoration: none;
+  }
+  
+  .contact-bar a:hover {
+    text-decoration: bold;
   }
 
   
