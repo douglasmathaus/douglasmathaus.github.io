@@ -9,7 +9,8 @@ body {
   }
   
   h1 {
-    color: #333;
+    color: #737272;
+    animation: fade-in 0.8s;
   }
   
   #qr-code {
@@ -22,35 +23,72 @@ body {
     border-radius: 4px;
     border: 1px solid #ccc;
     margin-bottom: 10px;
+    animation: fade-in 1s;
   }
   
   button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #3ca4ff;
+    background-color: #737272;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    animation: fade-in 2s;
   }
   
   button:hover {
-    background-color: #297ac9;
+    background-color: #7daf8e;
   }
   
   .download-btn {
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #3ca4ff;
+    background-color: #737272;
     color: white;
     border: none;
     border-radius: 4px;
     text-decoration: none;
     cursor: pointer;
+    opacity: 0;
+    filter: blur(8px);
+    animation: fade-in 1s forwards;
   }
   
   .download-btn:hover {
-    background-color: #297ac9;
+    background-color: #7daf8e;
+  }
+  
+  #download-success {
+    display: none;
+    opacity: 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    animation: fade-in 1s forwards, fade-out 1s 3s forwards;
+  }
+
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      filter: blur(8px);
+    }
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+  
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+      filter: blur(0);
+    }
+    100% {
+      opacity: 0;
+      filter: blur(8px);
+    }
   }
   
